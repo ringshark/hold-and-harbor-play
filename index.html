@@ -89,6 +89,33 @@ body {
 	text-align: center;
 	z-index: 1;
 }
+
+/* ---- Hold & Harbor loading screen ---- */
+#status {
+	background: linear-gradient(#0b3a63 0%, #0f5f86 55%, #1b8aa3 100%);
+	font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+	overflow: hidden;
+}
+#status .sea { position: absolute; inset: 0;
+	background: radial-gradient(ellipse at 50% 110%, rgba(255, 255, 255, 0.18), transparent 60%); }
+#status .stage { position: relative; width: min(70vw, 340px); height: min(42vw, 210px); margin-bottom: 8px; }
+#status .ship { position: absolute; left: 50%; bottom: 26%; width: 62%; margin-left: -31%;
+	filter: drop-shadow(0 8px 6px rgba(0, 0, 0, 0.35));
+	animation: bob 3.2s ease-in-out infinite; transform-origin: 50% 90%; }
+#status .wave { position: absolute; left: -10%; width: 120%; height: 30%; border-radius: 50%;
+	background: rgba(120, 210, 230, 0.55); }
+#status .w1 { bottom: 12%; animation: sway 3.4s ease-in-out infinite; }
+#status .w2 { bottom: 2%; background: rgba(40, 140, 175, 0.85); animation: sway 2.6s ease-in-out infinite reverse; }
+#status .title { position: relative; margin: 6px 0 0; color: #ffd23f; font-size: clamp(26px, 6vw, 44px);
+	letter-spacing: 3px; text-shadow: 0 3px 0 #5a3410, 0 0 14px rgba(0, 0, 0, 0.5); }
+#status .sub { position: relative; margin: 6px 0 14px; color: #dff4ff; font-size: 15px; opacity: 0.9; }
+#status-progress { position: relative; left: auto; right: auto; bottom: auto; width: min(60vw, 280px); height: 10px;
+	appearance: none; -webkit-appearance: none; border: 2px solid #5a3410; border-radius: 8px; background: #0a2c4a; overflow: hidden; }
+#status-progress::-webkit-progress-bar { background: #0a2c4a; }
+#status-progress::-webkit-progress-value { background: linear-gradient(#ffe27a, #e0a020); transition: width 0.2s; }
+#status-progress::-moz-progress-bar { background: #e8b030; }
+@keyframes bob { 0%, 100% { transform: translateY(0) rotate(-2.5deg); } 50% { transform: translateY(-9px) rotate(2.5deg); } }
+@keyframes sway { 0%, 100% { transform: translateX(-3%); } 50% { transform: translateX(3%); } }
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
@@ -104,14 +131,20 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
+			<div class="sea"></div>
+			<div class="stage">
+				<img class="ship" src="loading_ship.png" alt="">
+				<div class="wave w1"></div><div class="wave w2"></div>
+			</div>
+			<h1 class="title">HOLD &amp; HARBOR</h1>
+			<p class="sub">Hoisting the sails&hellip;</p>
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":15354376,"index.wasm":38034280},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":15426492,"index.wasm":38034280},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -217,4 +250,5 @@ const engine = new Engine(GODOT_CONFIG);
 		</script>
 	</body>
 </html>
+
 
