@@ -1,0 +1,15 @@
+{
+  "name": "Hold & Harbor Art Preview",
+  "short_name": "Hold & Harbor Art Preview",
+  "description": "Unmerged illustrated harbor art preview",
+  "start_url": ".",
+  "scope": ".",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#06264c",
+  "theme_color": "#06264c",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
