@@ -1,0 +1,11 @@
+{
+  "source_repository": "ringshark/hold-and-harbor-source",
+  "source_commit": "e9997e213f0597ace24649f23a97a049aaadbfdf",
+  "godot_version": "4.5.1",
+  "change": "Remove overlapping painted boat views during turns",
+  "sha256": {
+    "index.html": "07b9e3b384a8be1051da3136023d6195b8c5ebd9f91c3130175a78d8698ec446",
+    "index.pck": "cad3e47e6c0bbfb41b780163a91cecc0836f9636098a60c94cc8f1c7d9c8046c",
+    "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
+  }
+}
