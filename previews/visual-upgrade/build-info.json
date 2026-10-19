@@ -1,0 +1,16 @@
+{
+  "source_repository": "ringshark/hold-and-harbor-source",
+  "source_branch": "feature/harbor-visual-upgrade",
+  "source_commit": "be57e1d3ccb1730d09150a735a17aadb08c71ee4",
+  "godot_version": "4.5.1",
+  "variant": "visual-preview",
+  "save_isolation": {
+    "custom_user_dir": "hold-harbor-visual-preview",
+    "filename_prefix": "visual_preview_holdharbor_"
+  },
+  "sha256": {
+    "index.html": "227150c31d34f0f82e8a8ec69f32f97f510013bfa46ba08ae917e3cdee9c22a0",
+    "index.pck": "579bfa0da424e8e11c4a9b12ad6b5394996cb05ba9da37d3c27bed9faee315e1",
+    "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
+  }
+}
