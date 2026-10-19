@@ -1,11 +1,11 @@
 {
   "source_repository": "ringshark/hold-and-harbor-source",
-  "source_commit": "be57e1d3ccb1730d09150a735a17aadb08c71ee4",
+  "source_commit": "07d60a617657e6c564e50fa12e7a99803c88efb4",
   "godot_version": "4.5.1",
-  "change": "3D fleet with continuous rotation, animated sails, shoreline surf, lighting and shadows, sea atmosphere, and compact HUD",
+  "change": "Keep wandering pirates in their sea instead of crossing the island and crowding the harbor",
   "sha256": {
-    "index.html": "f8a8796c0a0d4461ee385318538911ef3a98f0469b2fdeb28e10862ae6cd13ab",
-    "index.pck": "95466ebddcf0b730a9072161c8c5dfe88f298854f1728d1439951acf96964ed8",
+    "index.html": "fbc5431529c0b3a5079513d40488417605f29117a385c4c34a1e408dfce23551",
+    "index.pck": "c60c11aa7af805f6500ffbc1cb671c5e7121e80d2d35e51dde6ff631a2d59c1a",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
