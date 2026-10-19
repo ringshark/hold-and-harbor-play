@@ -1,11 +1,11 @@
 {
   "source_repository": "ringshark/hold-and-harbor-source",
-  "source_commit": "07d60a617657e6c564e50fa12e7a99803c88efb4",
+  "source_commit": "9cc42f76273fe78e4bd7a26c0a59b2a182676203",
   "godot_version": "4.5.1",
-  "change": "Keep wandering pirates in their sea instead of crossing the island and crowding the harbor",
+  "change": "iPhone interruption pausing, durable resume recovery, and bounded mobile boat rendering",
   "sha256": {
-    "index.html": "fbc5431529c0b3a5079513d40488417605f29117a385c4c34a1e408dfce23551",
-    "index.pck": "c60c11aa7af805f6500ffbc1cb671c5e7121e80d2d35e51dde6ff631a2d59c1a",
+    "index.html": "19499ea9c113a3c61b684021a81f8597a01be7db03fc5d692b58f9b0f42180c4",
+    "index.pck": "fbfec6e607a2c604fd8daa348b9e2b8702cca8b5a32e05904f867a6ae10726ca",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
