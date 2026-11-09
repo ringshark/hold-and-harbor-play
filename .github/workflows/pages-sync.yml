@@ -1,13 +1,14 @@
 name: Pages sync
 # The play repo's site only rebuilds on a real git push. API uploads
 # (Contents API / Git Data API) land the files but fire no push event,
-# so Pages never rebuilds. This job checks every 5 minutes whether the
-# live site matches the repo and, if not, makes a real git push
-# (empty commit) with the runner's git CLI, which fires the push event
-# that triggers the Pages build.
+# so Pages never rebuilds. This job checks whether the live site matches
+# the repo and, if not, makes a real git push (empty commit) with the
+# runner's git CLI, which fires the push event that triggers the Pages
+# build. Runs on a schedule, and manually via workflow_dispatch.
 on:
   schedule:
     - cron: '*/5 * * * *'
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
