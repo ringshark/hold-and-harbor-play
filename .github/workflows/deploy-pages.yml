@@ -1,0 +1,27 @@
+name: Deploy Pages
+# Publishes the repo's current files to GitHub Pages using the Actions
+# deployment path. Requires the repo's Pages Source to be set to
+# "GitHub Actions" (Settings -> Pages -> Source). Run manually from the
+# Actions tab, or automatically on every push to main.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - id: deployment
+        uses: actions/deploy-pages@v4
