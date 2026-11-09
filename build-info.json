@@ -1,11 +1,11 @@
 {
-  "source_repository": "ringshark/hold-and-harbor-source",
-  "source_commit": "9cc42f76273fe78e4bd7a26c0a59b2a182676203",
+  "source_repository": "ringshark/hold-and-harbor",
+  "source_commit": "ff73fabbd569bc93fed01b59e45c18047de01cd3",
   "godot_version": "4.5.1",
-  "change": "iPhone interruption pausing, durable resume recovery, and bounded mobile boat rendering",
+  "change": "Tropical reef water and sunlit shallows (PR #4); headless gameplay test fixes (PR #5)",
   "sha256": {
-    "index.html": "19499ea9c113a3c61b684021a81f8597a01be7db03fc5d692b58f9b0f42180c4",
-    "index.pck": "fbfec6e607a2c604fd8daa348b9e2b8702cca8b5a32e05904f867a6ae10726ca",
+    "index.html": "7b9df43799b503668a7815889ba81c7b8a8afda32d83234a86be61c36593cf9f",
+    "index.pck": "42b1abd24db8497eedb96a5a7291dc95f55718727e8895fdfd75b22bec547580",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
