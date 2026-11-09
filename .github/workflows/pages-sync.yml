@@ -1,0 +1,30 @@
+name: Pages sync
+# The play repo's site only rebuilds on a real git push. API uploads
+# (Contents API / Git Data API) land the files but fire no push event,
+# so Pages never rebuilds. This job checks every 5 minutes whether the
+# live site matches the repo and, if not, makes a real git push
+# (empty commit) with the runner's git CLI, which fires the push event
+# that triggers the Pages build.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check if the live site matches the repo
+        run: |
+          LIVE=$(curl -s https://ringshark.github.io/hold-and-harbor-play/build-info.json | python3 -c "import json,sys; print(json.load(sys.stdin).get('source_commit',''))" || echo "")
+          REPO=$(python3 -c "import json; print(json.load(open('build-info.json')).get('source_commit',''))")
+          echo "live=$LIVE repo=$REPO"
+          if [ "$LIVE" != "$REPO" ]; then echo "STALE=true" >> "$GITHUB_ENV"; fi
+      - name: Trigger Pages rebuild
+        if: env.STALE == 'true'
+        run: |
+          git config user.name "ringshark"
+          git config user.email "mgring715@gmail.com"
+          git commit --allow-empty -m "Trigger Pages rebuild"
+          git push
