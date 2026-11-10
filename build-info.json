@@ -1,11 +1,11 @@
 {
   "source_repository": "ringshark/hold-and-harbor",
-  "source_commit": "347428843b09beb698f586ab1b869da50da1789d",
+  "source_commit": "3367ccd3736019e40b71483a37648a12f8afa33d",
   "godot_version": "4.5.1",
-  "change": "Ship depth sorting (PR #8): world Y-sort enabled so ships draw north-to-south; a merchant sailing just north of the player no longer draws on top of the player's sails. Includes boat turning (PR #7), tropical reef water (PR #4), headless test fixes (PR #5).",
+  "change": "Ship water sync (PR #9): water shadow/foam counter-rotated so it stays flat under the hull at every heading; no more vertical loop hanging off the hull when sailing north/south. Includes ship depth sorting (PR #8), boat turning (PR #7), tropical reef water (PR #4), headless test fixes (PR #5).",
   "sha256": {
-    "index.html": "ebc1e7d38195af309c387a32a2d17f05928791d4bceddb269efbdb4a672b2330",
-    "index.pck": "edd5960288da05b2c813fbcfd87434d708b8f488b2fc27773ade1d306697d011",
+    "index.html": "06a28bcc6e79ad8ce9b6a9a220b8a0e1ec15cd21b0fa4e197b39c07119118824",
+    "index.pck": "f76b6815ccfc00a4406821d13dac6cff03043ee3490c8b6978508053e21482f1",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
