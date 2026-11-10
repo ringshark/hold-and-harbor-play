@@ -1,11 +1,11 @@
 {
   "source_repository": "ringshark/hold-and-harbor",
-  "source_commit": "3367ccd3736019e40b71483a37648a12f8afa33d",
+  "source_commit": "fac3bfcf19885b12cb4d50970baaa3e6f0741591",
   "godot_version": "4.5.1",
-  "change": "Ship water sync (PR #9): water shadow/foam counter-rotated so it stays flat under the hull at every heading; no more vertical loop hanging off the hull when sailing north/south. Includes ship depth sorting (PR #8), boat turning (PR #7), tropical reef water (PR #4), headless test fixes (PR #5).",
+  "change": "Art + animation pass 3 (PR #10): realistic water (lit swell, caustics, depth colour, surf on every shore), foam wakes, hull foam, soft effects, HUD/interior/title polish.",
   "sha256": {
-    "index.html": "06a28bcc6e79ad8ce9b6a9a220b8a0e1ec15cd21b0fa4e197b39c07119118824",
-    "index.pck": "f76b6815ccfc00a4406821d13dac6cff03043ee3490c8b6978508053e21482f1",
+    "index.html": "f9bf94149a47c6c1a7f50f06e9def45cc5ac2a7106ca9493e1b5353a6457cb5d",
+    "index.pck": "164fa9b2b5f0ed0fd3a3a9fd3a0da4d15c1eff2e3443d96fbf787103846ca74c",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
