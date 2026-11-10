@@ -1,13 +1,13 @@
 {
   "source_repository": "ringshark/hold-and-harbor",
-  "source_branch": "art-pass-realistic-water",
-  "source_pull_request": 10,
-  "source_commit": "9dfcdf7dfe7eaf246d0dd70b7e266cbdfee12bed",
+  "source_branch": "smooth-sailing-town-squares",
+  "source_pull_request": 11,
+  "source_commit": "10337693bc80f3b65f3aa4da8df53fa6a1cb85ec",
   "godot_version": "4.5.1",
-  "change": "Art + animation pass 3 preview: realistic water (lit swell, caustics, depth colour, surf), foam wakes, hull foam, soft effects, HUD/interior/title polish. Preview only; the live game at the site root is unchanged.",
+  "change": "Preview: smoother ship motion (frame-timed sim, eased helm), wider sea view, buildings on their deck squares. Preview only; the live game at the site root is unchanged.",
   "sha256": {
-    "index.html": "f9bf94149a47c6c1a7f50f06e9def45cc5ac2a7106ca9493e1b5353a6457cb5d",
-    "index.pck": "164fa9b2b5f0ed0fd3a3a9fd3a0da4d15c1eff2e3443d96fbf787103846ca74c",
+    "index.html": "3b72946b8e9f678415b842fe528abd667a864f18c9549b8808e2b762f2d1525a",
+    "index.pck": "4260679c53a21a40e966f3b12a5c581ef2c980a59b41d77023c5904b5e6ca0dd",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
