@@ -1,11 +1,11 @@
 {
   "source_repository": "ringshark/hold-and-harbor",
-  "source_commit": "ff73fabbd569bc93fed01b59e45c18047de01cd3",
+  "source_commit": "2df10ad845a3ed9d095141075245c1d9613da9aa",
   "godot_version": "4.5.1",
-  "change": "Tropical reef water and sunlit shallows (PR #4); headless gameplay test fixes (PR #5)",
+  "change": "Boat turning fix (PR #7): no more cross-fading ship-heading sprites, nearest heading sprite rendered; softer water caustics, sparkle, and wave distortion. Includes tropical reef water (PR #4) and headless test fixes (PR #5).",
   "sha256": {
-    "index.html": "7b9df43799b503668a7815889ba81c7b8a8afda32d83234a86be61c36593cf9f",
-    "index.pck": "42b1abd24db8497eedb96a5a7291dc95f55718727e8895fdfd75b22bec547580",
+    "index.html": "c66e8fef4e000204410938d050c5cb84a66953f632ab9847d48cb45eff182fdd",
+    "index.pck": "b72c530c8bc26eca4e020fd72255acd48eb4af5c1326e240b7d74ebdecf233ea",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
