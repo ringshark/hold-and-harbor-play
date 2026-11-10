@@ -1,11 +1,11 @@
 {
   "source_repository": "ringshark/hold-and-harbor",
-  "source_commit": "2df10ad845a3ed9d095141075245c1d9613da9aa",
+  "source_commit": "347428843b09beb698f586ab1b869da50da1789d",
   "godot_version": "4.5.1",
-  "change": "Boat turning fix (PR #7): no more cross-fading ship-heading sprites, nearest heading sprite rendered; softer water caustics, sparkle, and wave distortion. Includes tropical reef water (PR #4) and headless test fixes (PR #5).",
+  "change": "Ship depth sorting (PR #8): world Y-sort enabled so ships draw north-to-south; a merchant sailing just north of the player no longer draws on top of the player's sails. Includes boat turning (PR #7), tropical reef water (PR #4), headless test fixes (PR #5).",
   "sha256": {
-    "index.html": "c66e8fef4e000204410938d050c5cb84a66953f632ab9847d48cb45eff182fdd",
-    "index.pck": "b72c530c8bc26eca4e020fd72255acd48eb4af5c1326e240b7d74ebdecf233ea",
+    "index.html": "ebc1e7d38195af309c387a32a2d17f05928791d4bceddb269efbdb4a672b2330",
+    "index.pck": "edd5960288da05b2c813fbcfd87434d708b8f488b2fc27773ade1d306697d011",
     "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
   }
 }
