@@ -1,0 +1,13 @@
+{
+  "source_repository": "ringshark/hold-and-harbor",
+  "source_branch": "art-pass-realistic-water",
+  "source_pull_request": 10,
+  "source_commit": "9dfcdf7dfe7eaf246d0dd70b7e266cbdfee12bed",
+  "godot_version": "4.5.1",
+  "change": "Art + animation pass 3 preview: realistic water (lit swell, caustics, depth colour, surf), foam wakes, hull foam, soft effects, HUD/interior/title polish. Preview only; the live game at the site root is unchanged.",
+  "sha256": {
+    "index.html": "f9bf94149a47c6c1a7f50f06e9def45cc5ac2a7106ca9493e1b5353a6457cb5d",
+    "index.pck": "164fa9b2b5f0ed0fd3a3a9fd3a0da4d15c1eff2e3443d96fbf787103846ca74c",
+    "index.wasm": "6498359ba889796a0d95a2f71113ac184badc0f2d84cf28f4103c7e399d2d547"
+  }
+}
